@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.gridabout {
+    display: grid;
+    grid-template-columns: 587px 1fr;
+    grid-template-rows: 81px 881px;
+}
+
+.box {
+    background-color: blue;
+    border: 2px solid;
+    border-color: beige;
+}
+
+.aboutimage {
+    grid-column-start: 1;
+    grid-column-end: span 1;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+    height: 881px;
+    overflow: hidden;
+    opacity: 1;
+    border: 10px solid white;
+
+}
+
+.aboutmsg {
+    font-weight: 800;
+    font-size: 85px;
+  padding: 10px;
+    text-align: center;
+    border: 10px solid;
+    border-radius: 2px;
+    overflow: hidden;
+    z-index: 3;
+    color: white;
+
+    
+}
+
+.aboutwrapper {
+    grid-column-start: 1;
+    grid-column-end: span 1;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+    justify-self: center;
+    align-self: top;
+    margin-top: 70px;
+}
+
+.aboutparagraph {
+    grid-column-start: 2;
+    grid-column-end: span 1;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+    background-color: 		#F5F5F5;
+    margin: 20px;
+    font-size: 25px;
+    overflow: hidden;
+}
+
+.firstp {
+    white-space: pre-line;
+}
+
+.textwrapper {
+    margin: 20px;
+}

@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.loginGrid {
+    display: grid;
+    grid-template-columns: 1fr 1000px 1fr;
+    grid-template-rows: 1000px;
+    overflow: hidden;
+    background-color: rgb(182, 179, 179);
+}
+
+.loginWrapper {
+    grid-row-start: 1;
+    grid-row-end: span 1;
+    grid-column-start: 2;
+    grid-column-end: span 1;
+    background-color: rgb(255, 255, 255);
+    width: 1000px;
+    height: 480px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 10px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 120px 360px;
+}
+
+.loginHeader {
+    grid-row-start: 1;
+    grid-row-end: span 1;
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    font-size: 45px;
+    font-weight: 300;
+    display: grid;
+
+
+}
+
+.hrLogin {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 960px;
+}
+
+.headerText {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.loginForm {
+    grid-row-start: 2;
+    grid-row-end: span 1;
+    grid-column-start: 1;
+    grid-column-end: span 1;
+    font-size: 20px;
+}
+
+.usernameWrapper {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.passwordWrapper {
+    margin-top: 40px;
+    margin-left: 20px;
+
+}
+
+
+.usernameInput {
+    display: block;
+    height: 50px;
+    width: 300px;
+    font-size:20px;
+    padding:5px;
+    
+}
+
+.passwordInput {
+    display: block;
+    height: 50px;
+    width: 300px;
+    font-size:20px;
+    padding:5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.loginSubmit {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 100px;
+    height: 34px;
+    font-size: 17px;
+    background-color: black;
+    color: white;
+}
+
+.loginSubmit:hover {
+    background-color: rgb(65, 65, 65);
+    font-weight: 500;
+}
+
+.returnHome {
+    grid-row-start: 2;
+    grid-row-end: span 1;
+    grid-column-start: 2;
+    grid-column-end: span 1;
+    justify-self: end;
+    align-self: end;
+    margin:20px;
+    font-size: 20px;
+}
+
+.spanStyle {
+    color: black;
+}
+.spanStyle:hover {
+    color: grey;
+}
+
+::-ms-reveal {
+    display: none;
+}
+
+input.red:focus {
+    outline-color: red;
+}
+
+.toggle {
+    margin-left: 10px;
+    text-align: center;
+    zoom: 1.5;
+    accent-color: grey;
+
+}
+
+.bottomLogin {
+    height: 100px;
+    grid-template-columns: 120px 250px;
+    grid-template-rows: 100px;
+   
+    margin-top: 10px;
+    display: grid;
+  
+}
+
+.checkWrapper {
+    grid-column-start: 2;
+    grid-column-end: span 1;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+    justify-self: start;
+    align-self: center;
+    margin-top: 30px;
+    
+}
+
+.subWrapper {
+    grid-column-start: 1;
+    grid-column-end: span 1;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+    justify-self: start;
+    align-self: center;
+}
+
+.checkLabel {
+    grid-column-start: 2;
+    grid-column-end: span 1;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+    margin-left: 40px;
+    justify-self: start;
+    align-self: center;
+    margin-top: 23px;
+}
+
+.invalidCreds {
+    font-size: 20px;
+    margin-top: 10px;
+text-align: center;
+   white-space: nowrap;
+   background-color: red;
+   height: 30px;
+   line-height: 30px;
+   width: 300px;
+   color: white;
+   margin-left: 350px;
+   margin-right: 350px;
+
+  
+}

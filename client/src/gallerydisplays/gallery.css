@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.galleryGrid {
+    display: grid;
+    grid-template-columns: 1fr 400px 400px 400px 1fr; 
+    grid-template-rows: 81px;
+    grid-auto-rows: 1fr;
+    overflow:visible;
+    overflow-x: hidden;
+    overflow-y: visible;
+   
+    
+}
+
+.imageone {
+    width: 400px;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+    grid-column-start: 2;
+    grid-column-end: span 1;
+
+}
+
+.clickDisplay {
+ 
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    z-index: 4;
+    background:rgba(0, 0, 0, 0.85);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 400px 400px 400px 1fr;
+
+}
+
+.displayImage {
+    height: 80vh;
+    width: auto;
+    justify-self: center;
+    align-self: center;
+   
+    border: solid 2px gainsboro;
+}
+
+.imageDisplayWrapper {
+    justify-self: center;
+    align-self: center;
+    grid-column-start: 2;
+    grid-column-end: span 3;
+    display: grid;
+}
+
+
+.gridImage {
+    margin-top: 15px;
+    width: 380px;
+    margin-bottom: 10px;
+}
+
+.gridImage:hover{
+    opacity: 0.85;
+    border: 2.5px solid black;
+    cursor: pointer;
+}
+
+
+
+.displayspan {
+    grid-column-start: 2;
+    grid-column-end: span 3;
+    grid-row-start: 2;
+    grid-row-end: all;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-auto-rows: 1px;
+   
+  }
+
+  .image-list {
+    justify-self: center;
+  }
+
+  .xWrapper {
+    justify-self: end;
+    align-self: top;
+    margin: 40px;
+  }
+  .x {
+    color: white;
+    font-size: 27px;
+    transition: font-size 0.3s;
+  }
+
+  .x:hover {
+    font-size: 31px;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(216, 215, 215);
+  }
+
+  .description {
+background-color:white;  
+border: solid 2px gainsboro;
+    max-height: 120px;
+  }
+
+  .descriptionWrapper {
+    margin: 8px;
+    font-weight: 600;
+    font-size: 16px;
+  }

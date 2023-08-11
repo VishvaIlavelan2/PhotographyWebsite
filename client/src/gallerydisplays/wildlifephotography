@@ -1,0 +1,14 @@
+import "./gallery.css"
+import React  from "react";
+import Header from "../header/header.js";
+import GalleryTemplate from "./gallerytemplate";
+
+function WildlifePhotography() {
+    return (
+    
+            <GalleryTemplate />
+        
+    );
+};
+
+export default WildlifePhotography;

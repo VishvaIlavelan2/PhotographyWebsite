@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contactGrid {
+    display: grid;
+    grid-template-columns: 1fr 900px 1fr;
+    grid-template-rows: 81px 200px 820px ;
+    overflow-x: hidden;
+}
+
+.formHeader {
+    grid-column-start: 2;
+    grid-column-end: span 1;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+   
+
+  
+}
+
+.formHeaderWrapper {
+    margin: 10px;
+    margin-top: 40px;
+ 
+    font-size: 60px;
+}
+
+.form {
+    grid-column-start: 2;
+    grid-column-end: span 1;
+    grid-row-start: 3;
+    grid-row-end: span 1;
+  
+}
+
+.headerDescriptionWrapper {
+    font-size: 25px;
+
+}
+
+.hrWrapper {
+    margin-top: 10px;
+}
+
+hr {
+    height: 2px;
+    background-color: black;
+    border: none;
+    width: 900px;
+}
+
+.formGrid {
+    display: grid;
+    grid-template-columns: 450px 450px;
+    grid-template-rows: 120px 460px 120px 120px;
+    font-size: 20px;
+
+}
+
+.firstName {
+    grid-column-start: 1;
+    grid-column-end: span 1;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+    margin: 10px;
+    margin-top: 40px;
+    align-self: center;
+}
+
+.lastName {
+    grid-column-start: 2;
+    grid-column-end: span 1;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+    margin: 10px;
+    margin-top: 40px;
+    align-self: center;
+}
+.message {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+    margin: 10px;
+    margin-top: 40px;
+    align-self: center;
+}
+
+.email {
+    grid-column-start: 1;
+    grid-column-end: span 1;
+    grid-row-start: 3;
+    grid-row-end: span 1;
+    margin: 10px;
+    margin-top: 40px;
+    align-self: center;
+}
+
+.firstInput {
+        display: block;
+        width: 300px;
+        height: 50px;
+        font-size:20px;
+        
+}
+
+.secondInput {
+    display: block;
+    width: 300px;
+    height: 50px;
+    font-size:20px;
+
+}
+
+.thirdInput{
+    display: block;
+    width: 890px;
+    height: 390px;
+    font-size:20px;
+}
+
+.fourthInput {
+    display: block;
+    height: 50px;
+    width: 300px;
+    font-size:20px;
+   
+}
+
+.second {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 4;
+    grid-row-end: span 1;
+    margin: 10px;
+    margin-top: 40px;
+}
+
+.submitbtn {
+    height: 53px;
+    width: 160px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    margin: 10px;
+    margin-left: 0;
+    transition: all 0.2s;
+    margin-bottom: 40px;
+}
+
+.submitbtn:hover {
+    background-color: rgb(65, 65, 65);
+    font-weight: 500;
+}
+
+.notfinished {
+  
+    background-color: rgb(207, 28, 28);
+    width: 900px;
+    display: inline-block;
+    text-align: center;
+    color:white;
+    height: 40px;
+    margin-top: 10px;
+    line-height: 40px;
+    font-size: 20px;
+
+    
+}
