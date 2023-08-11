@@ -33,7 +33,7 @@ function Loginpage() {
  
    
 function onSubmit(event) {
-
+    //to prevent default behavior
     event.preventDefault();
     setInvalidCreds("hidden")
     const testusername = "vishva";
